@@ -140,7 +140,7 @@ public class OpenSearchTestBasePlugin implements Plugin<Project> {
 
             Map<String, String> sysprops = new HashMap<String, String>() {
                 {
-                    put("java.awt.headless", "true");
+                    put("java.awt.headless", "false");
                     put("tests.gradle", "true");
                     put("tests.artifact", project.getName());
                     put("tests.task", test.getPath());
